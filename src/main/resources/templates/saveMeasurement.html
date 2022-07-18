@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Measurement</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+    <div id="menu">
+        <a th:href="@{/index}" class="menu-item">Main Page</a>
+        <a th:href="@{/citiesList}" class="menu-item">Cities list</a>
+
+        <div style="clear: both;"></div>
+    </div>
+    <div id="form-container">
+        <h1>Add new training</h1>
+        <form method="post" th:action="@{/saveMeasurement}" th:object="${measurement}">
+            <input type="hidden" th:field="*{id}">
+            <input type="text" placeholder="name of city" th:field="*{city}">
+            <input type="text" placeholder="temperature" th:field="*{temperature}">
+
+            <input type="submit" value="Save">
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cities List</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+    <div id="menu">
+        <a th:href="@{/index}" class="menu-item">Main Page</a>
+        <a th:href="@{/saveMeasurement}" class="menu-item">Add new measurement</a>
+
+        <div style="clear: both;"></div>
+    </div>
+    <div id="wrapper">
+        <table class="styled-table">
+            <thead>
+            <tr>
+                <th>City</th>
+                <th>average 24 hours</th>
+                <th>average daily</th>
+                <th>average night</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="measurement : ${measurements}">
+                <td th:text="${measurement.city}">city</td>
+                <td th:text="${measurement.average24Hours}">average 24 hours</td>
+                <td th:text="${measurement.averageDaily}">average daily</td>
+                <td th:text="${measurement.averageNight}">average night</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3>average temperature for country</h3>
+    <h2 th:text="${average24}">27</h2>
+    <div class="clear: both;"></div>
+
+</body>
+</html>
