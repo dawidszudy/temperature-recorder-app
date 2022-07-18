@@ -13,9 +13,10 @@ public class Measurement {
     public Measurement() {
     }
 
-    public Measurement(String city, Double temperature) {
+    public Measurement(String city, Double temperature, LocalDateTime date) {
         this.city = city;
         this.temperature = temperature;
+        this.date = date;
     }
 
     public String getCity() {

@@ -32,7 +32,6 @@ public class DataLoader implements CommandLineRunner {
         Measurement measurement1 = new Measurement();
         measurement1.setCity("Warszawa");
         measurement1.setTemperature(25.5);
-        measurement1.setDate(measurement1.getDate());
 
         return measurement1;
     }
@@ -41,7 +40,6 @@ public class DataLoader implements CommandLineRunner {
         Measurement measurement2 = new Measurement();
         measurement2.setCity("Krakow");
         measurement2.setTemperature(23.2);
-        measurement2.setDate(measurement2.getDate());
 
         return measurement2;
     }

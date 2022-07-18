@@ -32,7 +32,7 @@ public class MeasurementController {
     }
 
     @PostMapping("/saveMeasurement")
-    public String saveTraining(@ModelAttribute Measurement measurement) {
+    public String saveMeasurement(@ModelAttribute Measurement measurement) {
         measurementService.save(measurement);
         return "redirect:/citiesList";
     }
