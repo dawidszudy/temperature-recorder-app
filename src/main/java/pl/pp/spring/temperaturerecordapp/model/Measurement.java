@@ -60,19 +60,4 @@ public class Measurement {
                 '}';
     }
 
-    public String average24Hours() {
-
-        return "average24Hours";
-    }
-
-    public String averageDaily() {
-
-        return "averageDaily";
-    }
-
-    public String averageNight() {
-
-        return "averageNight";
-    }
-
 }
