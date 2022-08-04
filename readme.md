@@ -5,10 +5,10 @@ The simple small app, which allows users to record their measurements of tempera
 
 ## Screenshots
 
-### Form add training
+### Form add measurement
 ![form add measurement](./img/formAdd.png)
 
-### Trainings list
+### Measurements list
 ![temperatures table](./img/table.png)
 
 ## Technologies Used

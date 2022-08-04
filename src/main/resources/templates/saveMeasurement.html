@@ -13,7 +13,7 @@
         <div style="clear: both;"></div>
     </div>
     <div id="form-container">
-        <h1>Add new training</h1>
+        <h1>Add new measurement</h1>
         <form method="post" th:action="@{/saveMeasurement}" th:object="${measurement}">
             <input type="hidden" th:field="*{id}">
             <input type="text" placeholder="name of city" th:field="*{city}">
